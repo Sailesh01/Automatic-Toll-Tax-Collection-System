@@ -1,0 +1,549 @@
+/*importing fonts---------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato&family=Roboto&family=Sofia&display=swap');
+
+
+
+:root{
+    
+    --primary-color:#32CD32;
+    --light-gray:#2b3032a1;
+    --border:#2b303218;
+    --text-color:#ff686b;
+    --roboto:"Roboto",sans-serif;
+    --gugi:"Gugi",cursive;
+    --sofia:"Sofia",cursive;
+}
+
+
+.primary-color{
+    color: var(--primary-color);
+}
+
+.bg-primary-color{ background-color: var(--primary-color) !important;
+}
+
+.text-color{ color:var(--text-color);
+}
+
+.font-roboto{ font-family:var(--roboto);
+}
+
+.lightblue{ color:lightblue;
+}
+
+
+/*header-----------------*/
+header{ background-color: var(--primary-color); font-family: var(--roboto); }
+
+
+header .site-title{ font-family: var(--gugi); color:white;
+}
+
+
+.container.dropdown-toggle,
+.container.droupdow-item{ font-size:0.7em;
+}
+
+.header-links a{ font-size: 0.9em; text-decoration: none; color:white; }
+
+
+/* Navigation  bar------------*/
+
+
+.navbar-nav.nav-link{ font-size: 0.9em; color: var(--light-gray)!important; }
+
+.navbar-nav.navbar-item.nav-link{ padding:0 1.3em;
+}
+
+
+
+.header-links a{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: black;
+    border: 2px solid brown;
+    background: var(--white);
+    border-radius: 0.5rem;
+}
+.header-links a:hover{
+    transition: all 0.5s ease;
+    color:blue;
+    font-weight: bold;
+}
+    
+
+/*------------------slider-----*/
+
+.img-fluid{
+    width: 100%;
+    height: 40rem !important;
+}
+
+
+
+.site-slider-one{
+    position: relative;
+}
+.position-top{
+    position: absolute;
+    top: 50%;
+}
+.prev,
+.next{ 
+    background-color: var(--primary-color);
+    padding:1rem 1rem;
+    border-radius: 5rem;
+    color:white;
+    margin:0 0.5rem;
+    opacity:0;
+    transition:opacity 1s ease;
+   
+
+}
+ .site-slider-one:hover .slider-btn .prev,
+ .site-slider-one:hover .slider-btn .next{
+      opacity:1;
+ }  
+.right-0{
+    right:0;
+}
+.fa-chevron-left,
+.fa-chevron-right{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+
+.slick-dots{
+    display:flex;
+    justify-content:center;
+    margin:0;
+    padding:1rem 0;
+    list-style-type:none;
+    position: absolute;
+    bottom:0;
+    right:50%
+}
+
+.slick-dots li{
+    margin: 0 0.6rem;
+    width:.5rem;
+    height:0.5rem;
+    padding:0;
+    border:none;
+    background-color:white;
+    text-indent:-99999px;
+    border-radius: 100%;
+    }
+    .slick-dots li.slick-active {
+        transform :scale(2.5);
+        box-shadow:0px 3px 5px 1px rgba(0,0,0,0.205); 
+    }
+
+    /*---------------------------------------footer-----------------------*/
+.fa-facebook-square{
+    color:white;
+}
+.fa-twitter-square{
+    color:white;
+}
+.fa-google-plus-square{
+    color:white;
+}
+.fa-linkedin{
+    color:white;
+}
+.fa-instagram-square{
+    color:white;
+}
+
+.fa-facebook-square:hover{
+    transition: all 0.5s ease;
+    color:blue;  }
+.fa-twitter-square:hover{
+        transition: all 0.5s ease;
+        color:blue;  } 
+.fa-google-plus-square:hover{
+            transition: all 0.5s ease;
+            color:blue;  }
+.fa-instagram-square:hover{
+                transition: all 0.5s ease;
+                color:blue;  }
+.fa-linkedin:hover{
+                    transition: all 0.5s ease;
+                    color:blue;  }
+
+
+
+/*-------------------------------------------------sign in page user ---------------------------*/
+#user{
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    
+    }
+    
+.user_card {
+			height: 400px;
+			width: 350px;
+			margin-top: auto;
+			margin-bottom: auto;
+			background-color:rgba(24, 207, 192, 0.767);
+			position: relative;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			padding: 10px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			border-radius: 5px;}
+.login_btn {
+			width: 100%;
+			background: #c0392b !important;
+			color: white !important;
+		}
+.login_btn:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+        }
+.admin_btn {
+			width: 100%;
+			background: #c02b2b !important;
+			color: white !important;
+		}
+.admin_btn:focus {
+			box-shadow: none !important;
+			outline: 0px !important;
+        }
+/* ----------------------------------------------sign in page admin------------------------------*/
+#admin{
+  
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;}
+    
+  /*#admin .container #login-row #login-column #login-box {
+    margin-top: 120px;
+    max-width: 500px;
+    height: 320px;
+    border: 1px solid #9C9C9C;
+    background-color:rgba(124, 192, 186, 0.137)
+  }
+  #admin .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+  #admin .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+  }*/
+  #contain{
+      margin-bottom: 50px;
+      
+
+  }
+  /* ----------------------------------------------/sign in page admin------------------------------*/
+  /* ----------------------------------------------Register page User------------------------------*/
+  #createaccount{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+ 
+  
+  *[role="form"] {
+      color: white;
+    max-width: 530px;
+    padding: 15px;
+    margin:0px auto;
+    border-radius: 0.3em;
+    background-color:rgba(11, 243, 224, 0.19)
+}
+
+*[role="form"] h2 { 
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.has-error label,
+.has-error input,
+.has-error textarea {
+    color: red;
+    border-color: red;
+}
+
+#form .list-unstyled li {
+    font-size: 13px;
+    padding: 4px 0 0;
+    color: red;
+}
+
+  /* ----------------------------------------------/Register page User------------------------------*/
+  /* ----------------------------------------------image detail------------------------------*/
+  #dash{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    background-size: 100% 100%;
+    height: 100%;
+  }
+  .emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+.profile-img{
+    text-align: center;
+}
+.profile-img img{
+    width: 70%;
+    height: 100%;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #0062cc;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+.proile-rating{
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+.proile-rating span{
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #0062cc;
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #0062cc;
+}
+/* ----------------------------------------------/Image detail------------------------------*/
+/* ----------------------------------------------wallet------------------------------*/
+#wallet{
+    background-size:100% 100%;
+    
+}
+.circle-tile {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.circle-tile-heading {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    color: #FFFFFF;
+    height: 80px;
+    margin: 0 auto -40px;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+    width: 80px;
+}
+.circle-tile-heading .fa {
+    line-height: 80px;
+}
+.circle-tile-content {
+    padding-top: 50px;
+}
+.circle-tile-number {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 5px 0 15px;
+}
+.circle-tile-description {
+    text-transform: uppercase;
+}
+.circle-tile-footer {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    padding: 5px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.circle-tile-footer:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+.circle-tile-heading.dark-blue:hover {
+    background-color: #2E4154;
+}
+.circle-tile-heading.green:hover {
+    background-color: #138F77;
+}
+.circle-tile-heading.orange:hover {
+    background-color: #DA8C10;
+}
+.circle-tile-heading.blue:hover {
+    background-color: #2473A6;
+}
+.circle-tile-heading.red:hover {
+    background-color: #CF4435;
+}
+.circle-tile-heading.purple:hover {
+    background-color: #7F3D9B;
+}
+.tile-img {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+}
+
+.dark-blue {
+    background-color: #34495E;
+}
+.green {
+    background-color: #16A085;
+}
+.blue {
+    background-color: #2980B9;
+}
+.orange {
+    background-color: #F39C12;
+}
+.red {
+    background-color: #E74C3C;
+}
+.purple {
+    background-color: #8E44AD;
+}
+.dark-gray {
+    background-color: #7F8C8D;
+}
+.gray {
+    background-color: #95A5A6;
+}
+.light-gray {
+    background-color: #BDC3C7;
+}
+.yellow {
+    background-color: #F1C40F;
+}
+.text-dark-blue {
+    color: #34495E;
+}
+.text-green {
+    color: #16A085;
+}
+.text-blue {
+    color: #2980B9;
+}
+.text-orange {
+    color: #F39C12;
+}
+.text-red {
+    color: #E74C3C;
+}
+.text-purple {
+    color: #8E44AD;
+}
+.text-faded {
+    color: rgba(255, 255, 255, 0.7);
+}
+/* ----------------------------------------------/wallet------------------------------*/
+/* ----------------------------------------------bill------------------------------*/
+#bill{
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px;
+ 
+}
+
+
+/* ----------------------------------------------/bill------------------------------*/
+/* ----------------------------------------------recharge------------------------------*/
+.mycontainer { margin-top:50px;
+    background-size: contain;
+margin-bottom: 50px;
+background-size: 100% 100%;
+}
+.panel-body{
+    background-color: #0062cc;
+}
+
+.checkbox.pull-right { margin: 5px; }
+.pl-ziro { padding-left: 5px;
+margin-bottom:5px ; }
+/* ----------------------------------------------/recharge------------------------------*/
+/* ----------------------------------------------table------------------------------*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+/* ----------------------------------------------/table------------------------------*/
